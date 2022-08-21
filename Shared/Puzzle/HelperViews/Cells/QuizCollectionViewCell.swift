@@ -13,7 +13,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
     
     var isRevealed: Bool = false
     
-    public static let identifier = "AnswerCollectionViewCell"
+    public static let identifier = "QuizCollectionViewCell"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,24 +33,24 @@ class QuizCollectionViewCell: UICollectionViewCell {
     func configure(with letter: String) {
         if letter == " " {
             self.letterLabel.textColor = .clear
-            self.letterLabel.backgroundColor = .blue
+            self.letterLabel.backgroundColor = .clear
             return
         }
         self.letter = letter
-        self.letterLabel.text = self.isRevealed ? self.letter : ""
+        self.letterLabel.text = ""
     }
     
     func revealAnswer() {
         self.isRevealed = true
-        self.letterLabel.text = self.letter
+        self.letterLabel.text = self.letter.uppercased()
     }
     
     fileprivate func setupUI() {
         self.letterLabel = UILabel(frame: self.bounds)
-        self.letterLabel.backgroundColor = .orange
+        self.letterLabel.backgroundColor = .quizColor
         self.letterLabel.textColor = .white
         self.letterLabel.textAlignment = .center
-        self.letterLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        self.letterLabel.font = UIFont.boldSystemFont(ofSize: 16)
         
         self.layer.cornerRadius = 8
         self.clipsToBounds = true

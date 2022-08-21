@@ -13,8 +13,11 @@ struct Words_PuzzleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            GameViewController()
+            
+//            PuzzleMainView(viewModel: PuzzleViewModel())
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

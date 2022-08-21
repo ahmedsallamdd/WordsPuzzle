@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 class KeyboardViewModel {
-    let lettersOptions = ["A", "B", "C", "D", "E", "F", "G",
-                          "H", "I", "J", "K", "L", "M", "N",
-                          "O", "P", "Q", "R", "S", "T", "U",
-                          "V", "W", "X", "Y", "Z"]
+    let lettersOptions = [["A", "B", "C", "D", "E", "F", "G"],
+                          ["H", "I", "J", "K", "L", "M", "N"],
+                          ["O", "P", "Q", "R", "S", "T", "U"],
+                          ["V", "W", "X", "Y", "Z"]]
 }
 
 class KeyboardView: UIView {
@@ -49,12 +49,11 @@ class KeyboardView: UIView {
         let itemDimension = self.frame.width / 10
         let itemSize = CGSize(width: itemDimension, height: itemDimension)
         
-        let insets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 30)
-        
+        let itemInsets = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 20)
         let layout = FlowLayout(itemSize: itemSize,
-                                minimumInteritemSpacing: 10,
+                                minimumInteritemSpacing: 5,
                                 minimumLineSpacing: 10,
-                                sectionInset: insets)
+                                sectionInset: itemInsets)
         
         self.collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         self.collectionView.delegate = self
@@ -70,14 +69,17 @@ class KeyboardView: UIView {
 }
 
 extension KeyboardView: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return self.viewModel.lettersOptions.count
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.viewModel.lettersOptions[section].count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyboardCollectionViewCell.identifier, for: indexPath) as? KeyboardCollectionViewCell {
             
-            cell.configure(with: self.viewModel.lettersOptions[indexPath.row])
+            cell.configure(with: self.viewModel.lettersOptions[indexPath.section][indexPath.row])
             return cell
         }
         
@@ -85,7 +87,7 @@ extension KeyboardView: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.keyTappedAction(self.viewModel.lettersOptions[indexPath.row])
+        self.keyTappedAction(self.viewModel.lettersOptions[indexPath.section][indexPath.row])
     }
     
 }

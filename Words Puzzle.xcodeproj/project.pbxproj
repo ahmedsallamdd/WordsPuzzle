@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A599C2AF28AC561200B178E7 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599C2AE28AC561200B178E7 /* QuizView.swift */; };
+		A599C2B228AC59D800B178E7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599C2B128AC59D800B178E7 /* StringExtensions.swift */; };
+		A599C2B428AC5B8D00B178E7 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599C2B328AC5B8D00B178E7 /* QuizCollectionViewCell.swift */; };
+		A599C2BA28AE820C00B178E7 /* QuizView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A599C2B928AE820C00B178E7 /* QuizView.xib */; };
+		A5B3BE2D28AF05080070CBB8 /* ErrorTrialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */; };
+		A5B3BE2F28AF05840070CBB8 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */; };
+		A5B3BE3128AF31310070CBB8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */; };
 		A5D0C09A28A97F1B002BBA50 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C09928A97F1B002BBA50 /* Tests_iOS.swift */; };
 		A5D0C09C28A97F1B002BBA50 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C09B28A97F1B002BBA50 /* Tests_iOSLaunchTests.swift */; };
 		A5D0C0A628A97F1B002BBA50 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0A528A97F1B002BBA50 /* Tests_macOS.swift */; };
@@ -21,6 +28,11 @@
 		A5D0C0B028A97F1B002BBA50 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C08228A97F1A002BBA50 /* Persistence.swift */; };
 		A5D0C0B128A97F1B002BBA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D0C08328A97F1B002BBA50 /* Assets.xcassets */; };
 		A5D0C0B228A97F1B002BBA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D0C08328A97F1B002BBA50 /* Assets.xcassets */; };
+		A5D0C0D028AACC5B002BBA50 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0CE28AACC5B002BBA50 /* GameVC.swift */; };
+		A5D0C0D128AACC5B002BBA50 /* GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D0C0CF28AACC5B002BBA50 /* GameVC.xib */; };
+		A5D0C0D528AACE62002BBA50 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0D428AACE62002BBA50 /* KeyboardView.swift */; };
+		A5D0C0DC28AAD556002BBA50 /* KeyboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0DB28AAD556002BBA50 /* KeyboardCollectionViewCell.swift */; };
+		A5E2538228AB16E7006015FF /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2538128AB16E7006015FF /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A599C2AE28AC561200B178E7 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		A599C2B128AC59D800B178E7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		A599C2B328AC5B8D00B178E7 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		A599C2B928AE820C00B178E7 /* QuizView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizView.xib; sourceTree = "<group>"; };
+		A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTrialsView.swift; sourceTree = "<group>"; };
+		A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		A5D0C07F28A97F1A002BBA50 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		A5D0C08028A97F1A002BBA50 /* Words_PuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words_PuzzleApp.swift; sourceTree = "<group>"; };
 		A5D0C08128A97F1A002BBA50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +74,11 @@
 		A5D0C0A128A97F1B002BBA50 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D0C0A528A97F1B002BBA50 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A5D0C0A728A97F1B002BBA50 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		A5D0C0CE28AACC5B002BBA50 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		A5D0C0CF28AACC5B002BBA50 /* GameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVC.xib; sourceTree = "<group>"; };
+		A5D0C0D428AACE62002BBA50 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		A5D0C0DB28AAD556002BBA50 /* KeyboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5E2538128AB16E7006015FF /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +113,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A599C2AD28AC54E900B178E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2538128AB16E7006015FF /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A599C2B028AC59C200B178E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A599C2B128AC59D800B178E7 /* StringExtensions.swift */,
+				A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */,
+				A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5B3BE2928AF04550070CBB8 /* ErrorTrialsView */ = {
+			isa = PBXGroup;
+			children = (
+				A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */,
+			);
+			path = ErrorTrialsView;
+			sourceTree = "<group>";
+		};
+		A5B3BE2A28AF04860070CBB8 /* QuizView */ = {
+			isa = PBXGroup;
+			children = (
+				A599C2AE28AC561200B178E7 /* QuizView.swift */,
+				A599C2B928AE820C00B178E7 /* QuizView.xib */,
+			);
+			path = QuizView;
+			sourceTree = "<group>";
+		};
+		A5B3BE2B28AF04950070CBB8 /* KeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				A5D0C0D428AACE62002BBA50 /* KeyboardView.swift */,
+			);
+			path = KeyboardView;
+			sourceTree = "<group>";
+		};
 		A5D0C07828A97F1A002BBA50 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +170,7 @@
 		A5D0C07D28A97F1A002BBA50 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A5D0C0C128A97F81002BBA50 /* Puzzle */,
 				A5D0C08028A97F1A002BBA50 /* Words_PuzzleApp.swift */,
 				A5D0C08128A97F1A002BBA50 /* ContentView.swift */,
 				A5D0C08228A97F1A002BBA50 /* Persistence.swift */,
@@ -147,6 +215,54 @@
 				A5D0C0A728A97F1B002BBA50 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A5D0C0C128A97F81002BBA50 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				A599C2B028AC59C200B178E7 /* Extensions */,
+				A5D0C0D328AACCEB002BBA50 /* HelperViews */,
+				A5D0C0C528A97FC4002BBA50 /* Game */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		A5D0C0C528A97FC4002BBA50 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A599C2AD28AC54E900B178E7 /* ViewModel */,
+				A5D0C0D228AACC61002BBA50 /* Views */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A5D0C0D228AACC61002BBA50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5D0C0CE28AACC5B002BBA50 /* GameVC.swift */,
+				A5D0C0CF28AACC5B002BBA50 /* GameVC.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5D0C0D328AACCEB002BBA50 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5B3BE2B28AF04950070CBB8 /* KeyboardView */,
+				A5B3BE2A28AF04860070CBB8 /* QuizView */,
+				A5B3BE2928AF04550070CBB8 /* ErrorTrialsView */,
+				A5D0C0DA28AAD4EB002BBA50 /* Cells */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		A5D0C0DA28AAD4EB002BBA50 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5D0C0DB28AAD556002BBA50 /* KeyboardCollectionViewCell.swift */,
+				A599C2B328AC5B8D00B178E7 /* QuizCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +390,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A599C2BA28AE820C00B178E7 /* QuizView.xib in Resources */,
+				A5D0C0D128AACC5B002BBA50 /* GameVC.xib in Resources */,
 				A5D0C0B128A97F1B002BBA50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,10 +425,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B3BE2D28AF05080070CBB8 /* ErrorTrialsView.swift in Sources */,
+				A5B3BE3128AF31310070CBB8 /* UIColorExtensions.swift in Sources */,
+				A5D0C0DC28AAD556002BBA50 /* KeyboardCollectionViewCell.swift in Sources */,
+				A5D0C0D528AACE62002BBA50 /* KeyboardView.swift in Sources */,
+				A5B3BE2F28AF05840070CBB8 /* UIViewExtensions.swift in Sources */,
+				A599C2B228AC59D800B178E7 /* StringExtensions.swift in Sources */,
 				A5D0C0A928A97F1B002BBA50 /* Words_Puzzle.xcdatamodeld in Sources */,
 				A5D0C0AF28A97F1B002BBA50 /* Persistence.swift in Sources */,
+				A5E2538228AB16E7006015FF /* GameViewModel.swift in Sources */,
+				A599C2AF28AC561200B178E7 /* QuizView.swift in Sources */,
+				A5D0C0D028AACC5B002BBA50 /* GameVC.swift in Sources */,
 				A5D0C0AB28A97F1B002BBA50 /* Words_PuzzleApp.swift in Sources */,
 				A5D0C0AD28A97F1B002BBA50 /* ContentView.swift in Sources */,
+				A599C2B428AC5B8D00B178E7 /* QuizCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -461,6 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
