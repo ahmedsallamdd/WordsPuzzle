@@ -1,0 +1,20 @@
+//
+//  AnswerView.swift
+//  Words Puzzle (iOS)
+//
+//  Created by Ahmed Sallam on 17/08/2022.
+//
+
+import UIKit
+
+class AnswerView: UIView {
+
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+
+}
