@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A503191128C852B500099704 /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A503191028C852B500099704 /* AVFAudio.framework */; };
+		A564BDAF28C4D8B2004E7156 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = A564BDAE28C4D8B2004E7156 /* Movies.json */; };
+		A564BDB128C4DB00004E7156 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BDB028C4DB00004E7156 /* MoviesModel.swift */; };
+		A564BDB328C4F67E004E7156 /* QuizLoadingManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BDB228C4F67E004E7156 /* QuizLoadingManger.swift */; };
+		A564BDB528C4FD0F004E7156 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BDB428C4FD0F004E7156 /* UIViewControllerExtensions.swift */; };
+		A564BDB728C50084004E7156 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BDB628C50084004E7156 /* GameView.swift */; };
+		A564BDB928C509E0004E7156 /* GameSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BDB828C509E0004E7156 /* GameSessionViewModel.swift */; };
+		A564BE3028C53B70004E7156 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A564BE2F28C53B70004E7156 /* KeyboardView.xib */; };
+		A564BE3428C6923C004E7156 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BE3328C6923C004E7156 /* ScoreView.swift */; };
+		A564BE3928C82C30004E7156 /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BE3828C82C30004E7156 /* CountriesModel.swift */; };
+		A564BE3B28C82DC0004E7156 /* Countries.json in Resources */ = {isa = PBXBuildFile; fileRef = A564BE3A28C82DC0004E7156 /* Countries.json */; };
+		A564BE3E28C8311A004E7156 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BE3D28C8311A004E7156 /* ResultView.swift */; };
+		A564BE4128C8354B004E7156 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564BE4028C8354B004E7156 /* GameSession.swift */; };
+		A58D289628C84CD700322947 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D289528C84CD700322947 /* MainView.swift */; };
+		A59288F928BF909C0038D0CB /* PlayAgainPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59288F828BF909C0038D0CB /* PlayAgainPopUpVC.xib */; };
+		A59288FB28C01A340038D0CB /* PlayAgainPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59288FA28C01A340038D0CB /* PlayAgainPopUpVC.swift */; };
+		A597BF9428B5590A008E9D0D /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597BF9328B5590A008E9D0D /* QuizModel.swift */; };
+		A597BF9828B55AC6008E9D0D /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597BF9728B55AC6008E9D0D /* FirestoreManager.swift */; };
 		A599C2AF28AC561200B178E7 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599C2AE28AC561200B178E7 /* QuizView.swift */; };
 		A599C2B228AC59D800B178E7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599C2B128AC59D800B178E7 /* StringExtensions.swift */; };
 		A599C2B428AC5B8D00B178E7 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599C2B328AC5B8D00B178E7 /* QuizCollectionViewCell.swift */; };
 		A599C2BA28AE820C00B178E7 /* QuizView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A599C2B928AE820C00B178E7 /* QuizView.xib */; };
+		A5AFD38928B30D2E00E7D461 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFD38828B30D2E00E7D461 /* SoundManager.swift */; };
+		A5AFD38B28B4129000E7D461 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5AFD38A28B4128F00E7D461 /* GoogleService-Info.plist */; };
+		A5AFD38D28B42CF400E7D461 /* wrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5AFD38C28B42CF400E7D461 /* wrongAnswer.mp3 */; };
+		A5AFD38F28B4305700E7D461 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFD38E28B4305700E7D461 /* UILabelExtensions.swift */; };
+		A5AFD39128B4351F00E7D461 /* correctAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5AFD39028B4351F00E7D461 /* correctAnswer.mp3 */; };
 		A5B3BE2D28AF05080070CBB8 /* ErrorTrialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */; };
 		A5B3BE2F28AF05840070CBB8 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */; };
 		A5B3BE3128AF31310070CBB8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */; };
+		A5B490AC28C92F49002D598E /* QuizContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B490AB28C92F49002D598E /* QuizContainerView.swift */; };
 		A5D0C09A28A97F1B002BBA50 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C09928A97F1B002BBA50 /* Tests_iOS.swift */; };
 		A5D0C09C28A97F1B002BBA50 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C09B28A97F1B002BBA50 /* Tests_iOSLaunchTests.swift */; };
 		A5D0C0A628A97F1B002BBA50 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0A528A97F1B002BBA50 /* Tests_macOS.swift */; };
@@ -28,11 +52,8 @@
 		A5D0C0B028A97F1B002BBA50 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C08228A97F1A002BBA50 /* Persistence.swift */; };
 		A5D0C0B128A97F1B002BBA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D0C08328A97F1B002BBA50 /* Assets.xcassets */; };
 		A5D0C0B228A97F1B002BBA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D0C08328A97F1B002BBA50 /* Assets.xcassets */; };
-		A5D0C0D028AACC5B002BBA50 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0CE28AACC5B002BBA50 /* GameVC.swift */; };
-		A5D0C0D128AACC5B002BBA50 /* GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D0C0CF28AACC5B002BBA50 /* GameVC.xib */; };
 		A5D0C0D528AACE62002BBA50 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0D428AACE62002BBA50 /* KeyboardView.swift */; };
 		A5D0C0DC28AAD556002BBA50 /* KeyboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0DB28AAD556002BBA50 /* KeyboardCollectionViewCell.swift */; };
-		A5E2538228AB16E7006015FF /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2538128AB16E7006015FF /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +74,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A503191028C852B500099704 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/AVFAudio.framework; sourceTree = DEVELOPER_DIR; };
+		A564BDAE28C4D8B2004E7156 /* Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
+		A564BDB028C4DB00004E7156 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		A564BDB228C4F67E004E7156 /* QuizLoadingManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLoadingManger.swift; sourceTree = "<group>"; };
+		A564BDB428C4FD0F004E7156 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A564BDB628C50084004E7156 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A564BDB828C509E0004E7156 /* GameSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionViewModel.swift; sourceTree = "<group>"; };
+		A564BE2F28C53B70004E7156 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		A564BE3328C6923C004E7156 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		A564BE3828C82C30004E7156 /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
+		A564BE3A28C82DC0004E7156 /* Countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Countries.json; sourceTree = "<group>"; };
+		A564BE3D28C8311A004E7156 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A564BE4028C8354B004E7156 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		A58D289528C84CD700322947 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A59288F828BF909C0038D0CB /* PlayAgainPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayAgainPopUpVC.xib; sourceTree = "<group>"; };
+		A59288FA28C01A340038D0CB /* PlayAgainPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAgainPopUpVC.swift; sourceTree = "<group>"; };
+		A597BF9328B5590A008E9D0D /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		A597BF9728B55AC6008E9D0D /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		A599C2AE28AC561200B178E7 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		A599C2B128AC59D800B178E7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A599C2B328AC5B8D00B178E7 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		A599C2B928AE820C00B178E7 /* QuizView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizView.xib; sourceTree = "<group>"; };
+		A5AFD38828B30D2E00E7D461 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		A5AFD38A28B4128F00E7D461 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5AFD38C28B42CF400E7D461 /* wrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswer.mp3; sourceTree = "<group>"; };
+		A5AFD38E28B4305700E7D461 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		A5AFD39028B4351F00E7D461 /* correctAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswer.mp3; sourceTree = "<group>"; };
 		A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTrialsView.swift; sourceTree = "<group>"; };
 		A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		A5B490AB28C92F49002D598E /* QuizContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContainerView.swift; sourceTree = "<group>"; };
 		A5D0C07F28A97F1A002BBA50 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		A5D0C08028A97F1A002BBA50 /* Words_PuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words_PuzzleApp.swift; sourceTree = "<group>"; };
 		A5D0C08128A97F1A002BBA50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,11 +119,8 @@
 		A5D0C0A128A97F1B002BBA50 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D0C0A528A97F1B002BBA50 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A5D0C0A728A97F1B002BBA50 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		A5D0C0CE28AACC5B002BBA50 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
-		A5D0C0CF28AACC5B002BBA50 /* GameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVC.xib; sourceTree = "<group>"; };
 		A5D0C0D428AACE62002BBA50 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		A5D0C0DB28AAD556002BBA50 /* KeyboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCollectionViewCell.swift; sourceTree = "<group>"; };
-		A5E2538128AB16E7006015FF /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A503191128C852B500099704 /* AVFAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,10 +156,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A507762A28C229E0000C27CB /* ScoreView */ = {
+			isa = PBXGroup;
+			children = (
+				A564BE3328C6923C004E7156 /* ScoreView.swift */,
+			);
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
+		A564BE3C28C830DD004E7156 /* Json Files */ = {
+			isa = PBXGroup;
+			children = (
+				A564BDAE28C4D8B2004E7156 /* Movies.json */,
+				A564BE3A28C82DC0004E7156 /* Countries.json */,
+			);
+			path = "Json Files";
+			sourceTree = "<group>";
+		};
+		A564BE3F28C83134004E7156 /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				A564BE3D28C8311A004E7156 /* ResultView.swift */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		A59288F528BF8B800038D0CB /* PlayAgainPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				A59288F828BF909C0038D0CB /* PlayAgainPopUpVC.xib */,
+				A59288FA28C01A340038D0CB /* PlayAgainPopUpVC.swift */,
+			);
+			path = PlayAgainPopUp;
+			sourceTree = "<group>";
+		};
+		A597BF9528B55914008E9D0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A597BF9328B5590A008E9D0D /* QuizModel.swift */,
+				A564BDB028C4DB00004E7156 /* MoviesModel.swift */,
+				A564BE3828C82C30004E7156 /* CountriesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A597BF9628B559E9008E9D0D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A5AFD38828B30D2E00E7D461 /* SoundManager.swift */,
+				A597BF9728B55AC6008E9D0D /* FirestoreManager.swift */,
+				A564BDB228C4F67E004E7156 /* QuizLoadingManger.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A597BF9928B56033008E9D0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A503191028C852B500099704 /* AVFAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A599C2AD28AC54E900B178E7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A5E2538128AB16E7006015FF /* GameViewModel.swift */,
+				A564BDB828C509E0004E7156 /* GameSessionViewModel.swift */,
+				A564BE4028C8354B004E7156 /* GameSession.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,8 +233,19 @@
 				A599C2B128AC59D800B178E7 /* StringExtensions.swift */,
 				A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */,
 				A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */,
+				A5AFD38E28B4305700E7D461 /* UILabelExtensions.swift */,
+				A564BDB428C4FD0F004E7156 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5AFD38528B2FD4200E7D461 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A5AFD39028B4351F00E7D461 /* correctAnswer.mp3 */,
+				A5AFD38C28B42CF400E7D461 /* wrongAnswer.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		A5B3BE2928AF04550070CBB8 /* ErrorTrialsView */ = {
@@ -152,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D0C0D428AACE62002BBA50 /* KeyboardView.swift */,
+				A564BE2F28C53B70004E7156 /* KeyboardView.xib */,
 			);
 			path = KeyboardView;
 			sourceTree = "<group>";
@@ -164,6 +282,7 @@
 				A5D0C09828A97F1B002BBA50 /* Tests iOS */,
 				A5D0C0A428A97F1B002BBA50 /* Tests macOS */,
 				A5D0C08928A97F1B002BBA50 /* Products */,
+				A597BF9928B56033008E9D0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +293,7 @@
 				A5D0C08028A97F1A002BBA50 /* Words_PuzzleApp.swift */,
 				A5D0C08128A97F1A002BBA50 /* ContentView.swift */,
 				A5D0C08228A97F1A002BBA50 /* Persistence.swift */,
+				A5AFD38A28B4128F00E7D461 /* GoogleService-Info.plist */,
 				A5D0C08328A97F1B002BBA50 /* Assets.xcassets */,
 				A5D0C07E28A97F1A002BBA50 /* Words_Puzzle.xcdatamodeld */,
 			);
@@ -221,8 +341,15 @@
 			isa = PBXGroup;
 			children = (
 				A599C2B028AC59C200B178E7 /* Extensions */,
-				A5D0C0D328AACCEB002BBA50 /* HelperViews */,
+				A564BE3C28C830DD004E7156 /* Json Files */,
 				A5D0C0C528A97FC4002BBA50 /* Game */,
+				A564BE3F28C83134004E7156 /* ResultView */,
+				A5AFD38528B2FD4200E7D461 /* Sounds */,
+				A597BF9628B559E9008E9D0D /* Managers */,
+				A597BF9528B55914008E9D0D /* Models */,
+				A5D0C0D328AACCEB002BBA50 /* HelperViews */,
+				A58D289528C84CD700322947 /* MainView.swift */,
+				A5B490AB28C92F49002D598E /* QuizContainerView.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -239,8 +366,7 @@
 		A5D0C0D228AACC61002BBA50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A5D0C0CE28AACC5B002BBA50 /* GameVC.swift */,
-				A5D0C0CF28AACC5B002BBA50 /* GameVC.xib */,
+				A564BDB628C50084004E7156 /* GameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,9 +374,11 @@
 		A5D0C0D328AACCEB002BBA50 /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
+				A507762A28C229E0000C27CB /* ScoreView */,
+				A59288F528BF8B800038D0CB /* PlayAgainPopUp */,
+				A5B3BE2928AF04550070CBB8 /* ErrorTrialsView */,
 				A5B3BE2B28AF04950070CBB8 /* KeyboardView */,
 				A5B3BE2A28AF04860070CBB8 /* QuizView */,
-				A5B3BE2928AF04550070CBB8 /* ErrorTrialsView */,
 				A5D0C0DA28AAD4EB002BBA50 /* Cells */,
 			);
 			path = HelperViews;
@@ -281,6 +409,8 @@
 			dependencies = (
 			);
 			name = "Words Puzzle (iOS)";
+			packageProductDependencies = (
+			);
 			productName = "Words Puzzle (iOS)";
 			productReference = A5D0C08828A97F1B002BBA50 /* Words Puzzle.app */;
 			productType = "com.apple.product-type.application";
@@ -373,6 +503,8 @@
 				Base,
 			);
 			mainGroup = A5D0C07828A97F1A002BBA50;
+			packageReferences = (
+			);
 			productRefGroup = A5D0C08928A97F1B002BBA50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -391,7 +523,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A599C2BA28AE820C00B178E7 /* QuizView.xib in Resources */,
-				A5D0C0D128AACC5B002BBA50 /* GameVC.xib in Resources */,
+				A5AFD38D28B42CF400E7D461 /* wrongAnswer.mp3 in Resources */,
+				A5AFD39128B4351F00E7D461 /* correctAnswer.mp3 in Resources */,
+				A5AFD38B28B4129000E7D461 /* GoogleService-Info.plist in Resources */,
+				A564BE3028C53B70004E7156 /* KeyboardView.xib in Resources */,
+				A564BDAF28C4D8B2004E7156 /* Movies.json in Resources */,
+				A59288F928BF909C0038D0CB /* PlayAgainPopUpVC.xib in Resources */,
+				A564BE3B28C82DC0004E7156 /* Countries.json in Resources */,
 				A5D0C0B128A97F1B002BBA50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,19 +563,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AFD38F28B4305700E7D461 /* UILabelExtensions.swift in Sources */,
+				A5B490AC28C92F49002D598E /* QuizContainerView.swift in Sources */,
+				A564BE4128C8354B004E7156 /* GameSession.swift in Sources */,
 				A5B3BE2D28AF05080070CBB8 /* ErrorTrialsView.swift in Sources */,
 				A5B3BE3128AF31310070CBB8 /* UIColorExtensions.swift in Sources */,
+				A597BF9428B5590A008E9D0D /* QuizModel.swift in Sources */,
+				A564BE3428C6923C004E7156 /* ScoreView.swift in Sources */,
+				A564BE3E28C8311A004E7156 /* ResultView.swift in Sources */,
+				A5AFD38928B30D2E00E7D461 /* SoundManager.swift in Sources */,
 				A5D0C0DC28AAD556002BBA50 /* KeyboardCollectionViewCell.swift in Sources */,
 				A5D0C0D528AACE62002BBA50 /* KeyboardView.swift in Sources */,
+				A597BF9828B55AC6008E9D0D /* FirestoreManager.swift in Sources */,
+				A59288FB28C01A340038D0CB /* PlayAgainPopUpVC.swift in Sources */,
+				A564BE3928C82C30004E7156 /* CountriesModel.swift in Sources */,
+				A564BDB328C4F67E004E7156 /* QuizLoadingManger.swift in Sources */,
 				A5B3BE2F28AF05840070CBB8 /* UIViewExtensions.swift in Sources */,
 				A599C2B228AC59D800B178E7 /* StringExtensions.swift in Sources */,
 				A5D0C0A928A97F1B002BBA50 /* Words_Puzzle.xcdatamodeld in Sources */,
 				A5D0C0AF28A97F1B002BBA50 /* Persistence.swift in Sources */,
-				A5E2538228AB16E7006015FF /* GameViewModel.swift in Sources */,
 				A599C2AF28AC561200B178E7 /* QuizView.swift in Sources */,
-				A5D0C0D028AACC5B002BBA50 /* GameVC.swift in Sources */,
+				A58D289628C84CD700322947 /* MainView.swift in Sources */,
+				A564BDB128C4DB00004E7156 /* MoviesModel.swift in Sources */,
+				A564BDB528C4FD0F004E7156 /* UIViewControllerExtensions.swift in Sources */,
 				A5D0C0AB28A97F1B002BBA50 /* Words_PuzzleApp.swift in Sources */,
+				A564BDB928C509E0004E7156 /* GameSessionViewModel.swift in Sources */,
 				A5D0C0AD28A97F1B002BBA50 /* ContentView.swift in Sources */,
+				A564BDB728C50084004E7156 /* GameView.swift in Sources */,
 				A599C2B428AC5B8D00B178E7 /* QuizCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +675,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -538,6 +691,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -582,6 +736,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -591,6 +746,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -607,19 +763,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YJR76T9H74;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmedsallamdd.Words-Puzzle";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedsallamdd.WordsPuzzle;
 				PRODUCT_NAME = "Words Puzzle";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -637,19 +795,22 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YJR76T9H74;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmedsallamdd.Words-Puzzle";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedsallamdd.WordsPuzzle;
 				PRODUCT_NAME = "Words Puzzle";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -671,7 +832,9 @@
 				DEVELOPMENT_TEAM = YJR76T9H74;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -699,7 +862,9 @@
 				DEVELOPMENT_TEAM = YJR76T9H74;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -707,6 +872,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmedsallamdd.Words-Puzzle";
 				PRODUCT_NAME = "Words Puzzle";
 				SDKROOT = macosx;

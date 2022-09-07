@@ -8,11 +8,9 @@
 import UIKit
 
 class QuizCollectionViewCell: UICollectionViewCell {
-    fileprivate var letterLabel: UILabel!
-    fileprivate var letter: String = ""
-    
-    var isRevealed: Bool = false
-    
+    fileprivate(set) var letterLabel: UILabel!
+    fileprivate(set) var letter: String = ""
+        
     public static let identifier = "QuizCollectionViewCell"
     
     override init(frame: CGRect) {
@@ -31,33 +29,55 @@ class QuizCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with letter: String) {
-        if letter == " " {
-            self.letterLabel.textColor = .clear
-            self.letterLabel.backgroundColor = .clear
-            return
-        }
         self.letter = letter
-        self.letterLabel.text = ""
+        self.letterLabel.text = letter.uppercased()
+        self.letterLabel.textColor = .clear
+
+        if letter == " " {
+            self.contentView.backgroundColor = .clear
+        } else {
+            self.contentView.backgroundColor = .quizColor
+        }
     }
     
     func revealAnswer() {
-        self.isRevealed = true
+        self.letterLabel.textColor = .white
+    }
+    
+    func revealAnswerWithLossAnimation() {
         self.letterLabel.text = self.letter.uppercased()
     }
     
     fileprivate func setupUI() {
-        self.letterLabel = UILabel(frame: self.bounds)
-        self.letterLabel.backgroundColor = .quizColor
+        self.contentView.autoresizingMask = .flexibleWidth
+        self.contentView.backgroundColor = .quizColor
+        
+        self.letterLabel = UILabel(frame: self.contentView.bounds)
+        self.letterLabel.backgroundColor = .clear
         self.letterLabel.textColor = .white
         self.letterLabel.textAlignment = .center
         self.letterLabel.font = UIFont.boldSystemFont(ofSize: 16)
         
-        self.layer.cornerRadius = 8
-        self.clipsToBounds = true
+        if self.letter != " " && self.letter != "" && self.letter.containsSpecialCharacter == true {
+            self.revealAnswer()
+        }
+        
+        if self.letter != "" && self.letter != " " {
+            self.contentView.roundCornersWithBorder(borderWidth: 2,
+                                                    borderColor: .cornersColor,
+                                                    radius: 8)
+        } else {
+            self.contentView.roundCornersWithBorder(borderWidth: 2,
+                                                    borderColor: .clear,
+                                                    radius: 8)
+            
+        }
     }
     
     fileprivate func addSubViews() {
-        self.addSubview(self.letterLabel)
+        self.contentView.addSubview(self.letterLabel)
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        
         let topConstraint = NSLayoutConstraint(item: self.contentView,
                                                attribute: .top,
                                                relatedBy: .equal,

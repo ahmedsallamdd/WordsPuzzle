@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class KeyboardViewModel {
     let lettersOptions = [["A", "B", "C", "D", "E", "F", "G"],
@@ -16,15 +17,13 @@ class KeyboardViewModel {
 }
 
 class KeyboardView: UIView {
-    
-    fileprivate var collectionView: UICollectionView!
+    @IBOutlet var contentView: UIView!
+    @IBOutlet var collectionView: UICollectionView!
+        
     fileprivate var viewModel = KeyboardViewModel()
-    var keyTappedAction: (String) -> Void = { _ in }
+    fileprivate let nibName = "KeyboardView"
     
-    init(frame: CGRect, onKeyTapped: @escaping (String) -> Void) {
-        self.keyTappedAction = onKeyTapped
-        super.init(frame: frame)
-    }
+    var keyTappedAction: (String) -> Void = { _ in }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,11 +36,18 @@ class KeyboardView: UIView {
     }
     
     func loadData() {
+        self.intializeCollectionView()
         self.collectionView.reloadData()
     }
     
     fileprivate func commonInit() {
+
+        self.contentView = self.loadViewFromNib(self.nibName)
+        self.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.contentView.frame = self.bounds
+        self.addSubview(self.contentView)
         self.intializeCollectionView()
+
     }
     
     fileprivate func intializeCollectionView() {
@@ -49,21 +55,20 @@ class KeyboardView: UIView {
         let itemDimension = self.frame.width / 10
         let itemSize = CGSize(width: itemDimension, height: itemDimension)
         
-        let itemInsets = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 20)
+        let itemInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         let layout = FlowLayout(itemSize: itemSize,
-                                minimumInteritemSpacing: 5,
+                                minimumInteritemSpacing: 7,
                                 minimumLineSpacing: 10,
                                 sectionInset: itemInsets)
         
-        self.collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(KeyboardCollectionViewCell.self,
                                      forCellWithReuseIdentifier: KeyboardCollectionViewCell.identifier)
-        
+        self.collectionView.collectionViewLayout = layout
         self.collectionView.showsVerticalScrollIndicator = false
-        self.collectionView.backgroundColor = UIColor.white
-        self.addSubview(self.collectionView)
+        self.collectionView.backgroundColor = UIColor.clear
+        self.collectionView.reloadData()
     }
     
 }
@@ -72,6 +77,7 @@ extension KeyboardView: UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return self.viewModel.lettersOptions.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.viewModel.lettersOptions[section].count
     }
@@ -87,7 +93,8 @@ extension KeyboardView: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.keyTappedAction(self.viewModel.lettersOptions[indexPath.section][indexPath.row])
+        let letter = self.viewModel.lettersOptions[indexPath.section][indexPath.row]
+        self.keyTappedAction(letter)
     }
     
 }
@@ -95,8 +102,8 @@ extension KeyboardView: UICollectionViewDataSource, UICollectionViewDelegate {
 class FlowLayout: UICollectionViewFlowLayout {
 
     required init(itemSize: CGSize,
-                  minimumInteritemSpacing: CGFloat = 0,
-                  minimumLineSpacing: CGFloat = 0,
+                  minimumInteritemSpacing: CGFloat = 5,
+                  minimumLineSpacing: CGFloat = 10,
                   sectionInset: UIEdgeInsets = .zero) {
         
         super.init()
@@ -106,6 +113,7 @@ class FlowLayout: UICollectionViewFlowLayout {
         self.minimumLineSpacing = minimumLineSpacing
         self.sectionInset = sectionInset
         self.sectionInsetReference = .fromContentInset
+        self.collectionView?.backgroundColor = .clear
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -114,7 +122,9 @@ class FlowLayout: UICollectionViewFlowLayout {
 
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let layoutAttributes = super.layoutAttributesForElements(in: rect)!.map { $0.copy() as! UICollectionViewLayoutAttributes }
-        guard scrollDirection == .vertical else { return layoutAttributes }
+        guard scrollDirection == .vertical else {
+            return layoutAttributes
+        }
 
         // Filter attributes to compute only cell attributes
         let cellAttributes = layoutAttributes.filter({ $0.representedElementCategory == .cell })
@@ -140,4 +150,22 @@ class FlowLayout: UICollectionViewFlowLayout {
         return layoutAttributes
     }
 
+}
+
+struct KeyboardViewWrapper : UIViewRepresentable {
+        
+    let frame: CGSize
+    let onKeyTapped : (String) -> Void
+    
+    func makeUIView(context: Context) -> KeyboardView {
+        let keyboardView = KeyboardView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: frame))
+        keyboardView.keyTappedAction = { letter in
+            self.onKeyTapped(letter)
+        }
+        return keyboardView
+    }
+    
+    func updateUIView(_ uiView: KeyboardView, context: Context) {}
+    
+    typealias UIViewType = KeyboardView
 }

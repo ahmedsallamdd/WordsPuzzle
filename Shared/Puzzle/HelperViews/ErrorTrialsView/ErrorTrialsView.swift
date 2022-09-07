@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class ErrorTrailsView: UIView {
     fileprivate var errorImagesStackView: UIStackView!
@@ -14,6 +15,7 @@ class ErrorTrailsView: UIView {
     fileprivate var maxNumberOfTrials: Int = 4
     fileprivate var currentNumberOfMistakes: Int = 0
     fileprivate let errorImageName = "clear.fill"
+    fileprivate let player = SoundManager()
     
     var onSelectionError: () -> Void = {}
     
@@ -31,9 +33,22 @@ class ErrorTrailsView: UIView {
         self.maxNumberOfTrials = maxNumberOfTrials
         self.onSelectionError = { [weak self] in
             if let self = self {
-                let imageView = self.errorImagesStackView.arrangedSubviews[self.currentNumberOfMistakes] as! UIImageView
-                imageView.tintColor = .red
-                self.currentNumberOfMistakes += 1
+                if self.currentNumberOfMistakes < self.maxNumberOfTrials {
+                    self.player.playErrorSoundEffect()
+                    
+                    let imageView = self.errorImagesStackView.arrangedSubviews[self.currentNumberOfMistakes] as! UIImageView
+                    
+                    UIView.transition(with: imageView,
+                                      duration: 0.7,
+                                      options: .curveLinear,
+                                      animations: {
+                        imageView.tintColor = .errorColor
+                        imageView.shake()
+                    },
+                                      completion: nil)
+                    
+                    self.currentNumberOfMistakes += 1
+                }
             }
         }
     }
@@ -72,3 +87,26 @@ class ErrorTrailsView: UIView {
             .constraint(equalTo: self.bottomAnchor,constant: 10).isActive = true
     }
 }
+
+struct ErrorTrailsViewWrapper : UIViewRepresentable {
+    let errorView = ErrorTrailsView()
+    
+    func makeUIView(context: Context) -> ErrorTrailsView {
+        return self.errorView
+    }
+    
+    func updateUIView(_ uiView: ErrorTrailsView, context: Context) {
+        
+    }
+    
+    typealias UIViewType = ErrorTrailsView
+    
+    func configure(maxNumberOfTrials: Int) {
+        self.errorView.configure(maxNumberOfTrials: maxNumberOfTrials)
+    }
+    
+    func wrongLetterHasBeenSelected() {
+        self.errorView.onSelectionError()
+    }
+}
+

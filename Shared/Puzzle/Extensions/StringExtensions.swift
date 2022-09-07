@@ -14,6 +14,24 @@ enum SpacePostions {
 }
 
 extension String {
+    
+    var containsSpecialCharacter: Bool {
+        let allowedChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
+
+        for letter in self {
+            if allowedChars.contains(letter.lowercased()) == false {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func getBiggestWordSizeFromSentence(splitBy splittingChar: Character) -> Int {
+        let words: [String] = self.split(separator: splittingChar).map({String($0)})
+        return words.max(by: {$1.count > $0.count})?.count ?? 0
+        
+    }
+    
     func getCharAsString(at index: Int) -> String {
         return String(self[self.index(self.startIndex, offsetBy: index)])
     }

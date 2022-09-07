@@ -15,12 +15,15 @@ class KeyboardCollectionViewCell: UICollectionViewCell {
     
     func configure(with letter: String) {
         self.letterLabel.text = letter
+        self.isSelected = false
+        self.isTappedAlready = false
+        self.letterLabel.backgroundColor = .keyboardColor
     }
     
     func tap() {
         if self.isTappedAlready == false {
             self.isTappedAlready.toggle()
-            self.letterLabel.backgroundColor = .darkGray
+            self.letterLabel.alpha = 0.5
         }
     }
     
@@ -53,10 +56,11 @@ class KeyboardCollectionViewCell: UICollectionViewCell {
         self.letterLabel.backgroundColor = self.isTappedAlready ? .darkGray : .keyboardColor
         self.letterLabel.textColor = .white
         self.letterLabel.textAlignment = .center
-        self.letterLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        self.letterLabel.font = UIFont.boldSystemFont(ofSize: 16)
         
-        self.layer.cornerRadius = 8
-        self.clipsToBounds = true
+        self.letterLabel.roundCornersWithBorder(borderWidth: 2,
+                                                borderColor: .cornersColor,
+                                                radius: 8)
     }
     
     fileprivate func addSubViews() {
