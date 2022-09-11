@@ -37,7 +37,6 @@
 		A5B3BE2D28AF05080070CBB8 /* ErrorTrialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */; };
 		A5B3BE2F28AF05840070CBB8 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */; };
 		A5B3BE3128AF31310070CBB8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */; };
-		A5B490AC28C92F49002D598E /* QuizContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B490AB28C92F49002D598E /* QuizContainerView.swift */; };
 		A5D0C09A28A97F1B002BBA50 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C09928A97F1B002BBA50 /* Tests_iOS.swift */; };
 		A5D0C09C28A97F1B002BBA50 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C09B28A97F1B002BBA50 /* Tests_iOSLaunchTests.swift */; };
 		A5D0C0A628A97F1B002BBA50 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0C0A528A97F1B002BBA50 /* Tests_macOS.swift */; };
@@ -104,7 +103,6 @@
 		A5B3BE2C28AF05080070CBB8 /* ErrorTrialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTrialsView.swift; sourceTree = "<group>"; };
 		A5B3BE2E28AF05840070CBB8 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		A5B3BE3028AF31310070CBB8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		A5B490AB28C92F49002D598E /* QuizContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContainerView.swift; sourceTree = "<group>"; };
 		A5D0C07F28A97F1A002BBA50 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		A5D0C08028A97F1A002BBA50 /* Words_PuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words_PuzzleApp.swift; sourceTree = "<group>"; };
 		A5D0C08128A97F1A002BBA50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -349,7 +347,6 @@
 				A597BF9528B55914008E9D0D /* Models */,
 				A5D0C0D328AACCEB002BBA50 /* HelperViews */,
 				A58D289528C84CD700322947 /* MainView.swift */,
-				A5B490AB28C92F49002D598E /* QuizContainerView.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -564,7 +561,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5AFD38F28B4305700E7D461 /* UILabelExtensions.swift in Sources */,
-				A5B490AC28C92F49002D598E /* QuizContainerView.swift in Sources */,
 				A564BE4128C8354B004E7156 /* GameSession.swift in Sources */,
 				A5B3BE2D28AF05080070CBB8 /* ErrorTrialsView.swift in Sources */,
 				A5B3BE3128AF31310070CBB8 /* UIColorExtensions.swift in Sources */,
